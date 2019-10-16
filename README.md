@@ -37,4 +37,4 @@ kubectl taint nodes master node-role.kubernetes.io/master-
 
 
 
-Enjoi;
+Enjoy
