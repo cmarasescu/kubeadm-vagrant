@@ -4,7 +4,7 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 BOX_IMAGE="cmarasescu/k8s-base"
-BOX_VERSION="1.16.0"
+BOX_VERSION="1.15.1"
 # BOX_VERSION="0"
 required_plugins = %w(vagrant-vbguest vagrant-share)
 
@@ -53,7 +53,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           "--cpus", info[:cpus], 
           "--hwvirtex", "on", 
           "--uartmode1", "disconnected",
-        #  "--nested-hw-virt", "on",
+        # "--nested-hw-virt", "on",
           "--ioapic", "on"
         ]
       end # end provider
