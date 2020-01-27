@@ -34,7 +34,13 @@ If you want to run only the master node and be able to schedule Pods on it, remo
 ```
 kubectl taint nodes master node-role.kubernetes.io/master-
 ```
-
+### Update and upload to Vagrant cloud the K8s-base box
+- connect to https://app.vagrantup.com => select you account => Security => Generate token => copy the token locally
+cd ./src/template
+cat %token% > ./.vagrant_token
+- update pack.sh to reflect your vagrant account (the box will be uploaded to app.vagrantup.com -> cmarasescu/k8s-base. If you intend to upload it under your account, change cmarasescu with your own vagrant account)
+- at this point you are ready to pack and release publicly the box:
+./pack.sh
 
 
 Enjoy

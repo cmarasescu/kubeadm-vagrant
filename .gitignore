@@ -11,3 +11,4 @@ src/output/.kubeadmin_init
 src/output/*.txt
 src/output/*.yaml
 *.log
+./src/template/.vagrant_token
