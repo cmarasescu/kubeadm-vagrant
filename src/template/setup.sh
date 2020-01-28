@@ -73,5 +73,5 @@ docker pull docker.io/cilium/cilium:v1.4.2
 docker pull docker.io/cilium/operator:v1.4.2
 
 # other usefull images
-docker pull hlesey/toolbox:1.0
+docker pull cmarasescu/toolbox:1.0
 docker pull nginx
